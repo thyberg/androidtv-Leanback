@@ -111,17 +111,24 @@ public class VideoProvider {
                     sMovieList.put(category_name, categoryList);
                 }
             }
+            addExtraEntry();
         }
         return sMovieList;
     }
 
-    private static Movie buildMovieInfo(String category,
-                                        String title,
-                                        String description,
-                                        String studio,
-                                        String videoUrl,
-                                        String cardImageUrl,
-                                        String bgImageUrl) {
+    private static void addExtraEntry() {
+
+    }
+
+    private static Movie buildMovieInfo(
+        String category,
+        String title,
+        String description,
+        String studio,
+        String videoUrl,
+        String cardImageUrl,
+        String bgImageUrl
+    ) {
         Movie movie = new Movie();
         movie.setId(Movie.getCount());
         Movie.incrementCount();

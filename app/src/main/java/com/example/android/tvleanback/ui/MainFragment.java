@@ -102,13 +102,13 @@ public class MainFragment extends BrowseFragment implements
     private void prepareBackgroundManager() {
         mBackgroundManager = BackgroundManager.getInstance(getActivity());
         mBackgroundManager.attach(getActivity().getWindow());
-        mDefaultBackground = getResources().getDrawable(R.drawable.default_background);
+        mDefaultBackground = getResources().getDrawable(R.drawable.default_background, null);
         mMetrics = new DisplayMetrics();
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(mMetrics);
     }
 
     private void setupUIElements() {
-        setBadgeDrawable(getActivity().getResources().getDrawable(R.drawable.videos_by_google_banner));
+        setBadgeDrawable(getResources().getDrawable(R.drawable.videos_by_google_banner, null));
         setTitle(getString(R.string.browse_title)); // Badge, when set, takes precedent over title
         setHeadersState(HEADERS_ENABLED);
         setHeadersTransitionOnBackEnabled(true);
@@ -162,9 +162,10 @@ public class MainFragment extends BrowseFragment implements
      * .support.v4.content.Loader, java.lang.Object)
      */
     @Override
-    public void onLoadFinished(Loader<HashMap<String, List<Movie>>> arg0,
-                               HashMap<String, List<Movie>> data) {
-
+    public void onLoadFinished(
+        final Loader<HashMap<String, List<Movie>>> loader,
+        final HashMap<String, List<Movie>> data
+    ) {
         mRowsAdapter = new ArrayObjectAdapter(new ListRowPresenter());
         CardPresenter cardPresenter = new CardPresenter();
 
@@ -182,14 +183,14 @@ public class MainFragment extends BrowseFragment implements
             mRowsAdapter.add(new ListRow(header, listRowAdapter));
         }
 
-        HeaderItem gridHeader = new HeaderItem(i, getString(R.string.more_samples));
-
-        GridItemPresenter gridPresenter = new GridItemPresenter(this);
-        ArrayObjectAdapter gridRowAdapter = new ArrayObjectAdapter(gridPresenter);
-        gridRowAdapter.add(getString(R.string.grid_view));
-        gridRowAdapter.add(getString(R.string.error_fragment));
-        gridRowAdapter.add(getString(R.string.personal_settings));
-        mRowsAdapter.add(new ListRow(gridHeader, gridRowAdapter));
+//        HeaderItem gridHeader = new HeaderItem(i, getString(R.string.more_samples));
+//
+//        GridItemPresenter gridPresenter = new GridItemPresenter(this);
+//        ArrayObjectAdapter gridRowAdapter = new ArrayObjectAdapter(gridPresenter);
+//        gridRowAdapter.add(getString(R.string.grid_view));
+//        gridRowAdapter.add(getString(R.string.error_fragment));
+//        gridRowAdapter.add(getString(R.string.personal_settings));
+//        mRowsAdapter.add(new ListRow(gridHeader, gridRowAdapter));
 
         setAdapter(mRowsAdapter);
 
