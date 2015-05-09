@@ -40,7 +40,26 @@ public class Movie implements Parcelable {
     private String mCategory;
 
     public Movie() {
+    }
 
+    public Movie(
+        final String id,
+        final String title,
+        final String description,
+        final String bgImageUrl,
+        final String cardImageUrl,
+        final String videoUrl,
+        final String studio,
+        final String category
+    ) {
+        mId = id;
+        mTitle = title;
+        mDescription = description;
+        mBgImageUrl = bgImageUrl;
+        mCardImageUrl = cardImageUrl;
+        mVideoUrl = videoUrl;
+        mStudio = studio;
+        mCategory = category;
     }
 
     public Movie(Parcel in){

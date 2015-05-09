@@ -16,9 +16,9 @@
 -->
 
 <resources>
-    <string name="app_name"><![CDATA[Videos by Google]]></string>
-    <string name="browse_title"><![CDATA[Videos by Google]]></string>
-    <string name="related_movies">Related Movies</string>
+    <string name="app_name"><![CDATA[Expressen TV]]></string>
+    <string name="browse_title"><![CDATA[Expressen TV]]></string>
+    <string name="related_movies">Relaterade TV-klipp</string>
     <string name="vertical_grid_title"><![CDATA[Vertical Video Grid]]></string>
     <string name="error">Error</string>
     <string name="ok">OK</string>
@@ -35,8 +35,8 @@
     <string name="grid_view">Grid View</string>
     <string name="error_fragment">Error Fragment</string>
     <string name="personal_settings">Personal Settings</string>
-    <string name="watch_trailer_1">Watch trailer</string>
-    <string name="watch_trailer_2">FREE</string>
+    <string name="watch_trailer_1">Spela klippet</string>
+    <string name="watch_trailer_2"></string>
     <string name="rent_1">Rent By Day</string>
     <string name="rent_2">From $1.99</string>
     <string name="buy_1">Buy and Own</string>
@@ -82,7 +82,7 @@
     <string name="search_label">Leanback API Demo</string>
 
     <!-- The hint text that appears in the search box. -->
-    <string name="search_hint">Search for videos</string>
+    <string name="search_hint">Sök efter TVklipp</string>
 
     <!-- The description that will show up in the search settings for this source.  -->
     <string name="settings_description">Leanback API Demo Videos</string>

@@ -30,8 +30,8 @@ public class IconHeaderItemPresenter extends Presenter {
         View rootView = viewHolder.view;
 
         ImageView iconView = (ImageView) rootView.findViewById(R.id.header_icon);
-        Drawable icon = rootView.getResources().getDrawable(R.drawable.android_header, null);
-        iconView.setImageDrawable(icon);
+//        Drawable icon = rootView.getResources().getDrawable(R.drawable.android_header, null);
+//        iconView.setImageDrawable(icon);
 
         TextView label = (TextView) rootView.findViewById(R.id.header_label);
         label.setText(headerItem.getName());

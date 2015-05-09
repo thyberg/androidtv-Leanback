@@ -21,6 +21,7 @@ import android.util.Log;
 
 import com.example.android.tvleanback.R;
 import com.example.android.tvleanback.model.Movie;
+import com.example.android.tvleanback.util.VideoToMovieConverter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,6 +34,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -117,7 +119,8 @@ public class VideoProvider {
     }
 
     private static void addExtraEntry() {
-
+        final List<Movie> list = Arrays.asList(VideoToMovieConverter.convert(null));
+        sMovieList.put("Nöje", list);
     }
 
     private static Movie buildMovieInfo(
