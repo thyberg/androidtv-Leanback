@@ -76,53 +76,54 @@ public class VideoProvider {
         sMovieList = new HashMap<String, List<Movie>>();
 
         JSONObject jsonObj = new VideoProvider().parseUrl(url);
-        JSONArray categories = jsonObj.getJSONArray(TAG_GOOGLE_VIDEOS);
-        if (null != categories) {
-            Log.d(TAG, "category #: " + categories.length());
-            String title = new String();
-            String videoUrl = new String();
-            String bgImageUrl = new String();
-            String cardImageUrl = new String();
-            String studio = new String();
-            for (int i = 0; i < categories.length(); i++) {
-                JSONObject category = categories.getJSONObject(i);
-                String category_name = category.getString(TAG_CATEGORY);
-                JSONArray videos = category.getJSONArray(TAG_MEDIA);
-                Log.d(TAG,
-                        "category: " + i + " Name:" + category_name + " video length: "
-                                + videos.length());
-                List<Movie> categoryList = new ArrayList<Movie>();
-                if (null != videos) {
-                    for (int j = 0; j < videos.length(); j++) {
-                        JSONObject video = videos.getJSONObject(j);
-                        String description = video.getString(TAG_DESCRIPTION);
-                        JSONArray videoUrls = video.getJSONArray(TAG_SOURCES);
-                        if (null == videoUrls || videoUrls.length() == 0) {
-                            continue;
-                        }
-                        title = video.getString(TAG_TITLE);
-                        videoUrl = getVideoPrefix(category_name, videoUrls.getString(0));
-                        bgImageUrl = getThumbPrefix(category_name, title,
-                                video.getString(TAG_BACKGROUND));
-                        cardImageUrl = getThumbPrefix(category_name, title,
-                                video.getString(TAG_CARD_THUMB));
-                        studio = video.getString(TAG_STUDIO);
-                        categoryList.add(buildMovieInfo(category_name, title, description, studio,
-                                videoUrl, cardImageUrl,
-                                bgImageUrl));
-                    }
-                    sMovieList.put(category_name, categoryList);
-                }
-            }
-            addLatestNews();
+//        JSONArray categories = jsonObj.getJSONArray(TAG_GOOGLE_VIDEOS);
+//        if (null != categories) {
+//            Log.d(TAG, "category #: " + categories.length());
+//            String title = new String();
+//            String videoUrl = new String();
+//            String bgImageUrl = new String();
+//            String cardImageUrl = new String();
+//            String studio = new String();
+//            for (int i = 0; i < categories.length(); i++) {
+//                JSONObject category = categories.getJSONObject(i);
+//                String category_name = category.getString(TAG_CATEGORY);
+//                JSONArray videos = category.getJSONArray(TAG_MEDIA);
+//                Log.d(TAG,
+//                        "category: " + i + " Name:" + category_name + " video length: "
+//                                + videos.length());
+//                List<Movie> categoryList = new ArrayList<Movie>();
+//                if (null != videos) {
+//                    for (int j = 0; j < videos.length(); j++) {
+//                        JSONObject video = videos.getJSONObject(j);
+//                        String description = video.getString(TAG_DESCRIPTION);
+//                        JSONArray videoUrls = video.getJSONArray(TAG_SOURCES);
+//                        if (null == videoUrls || videoUrls.length() == 0) {
+//                            continue;
+//                        }
+//                        title = video.getString(TAG_TITLE);
+//                        videoUrl = getVideoPrefix(category_name, videoUrls.getString(0));
+//                        bgImageUrl = getThumbPrefix(category_name, title,
+//                                video.getString(TAG_BACKGROUND));
+//                        cardImageUrl = getThumbPrefix(category_name, title,
+//                                video.getString(TAG_CARD_THUMB));
+//                        studio = video.getString(TAG_STUDIO);
+//                        categoryList.add(buildMovieInfo(category_name, title, description, studio,
+//                                videoUrl, cardImageUrl,
+//                                bgImageUrl));
+//                    }
+//                    sMovieList.put(category_name, categoryList);
+//                }
+//            }
+        addNews("Nöje", "noje.json");
+        addNews("Utrikes", "nyheter.json");
 //            addExtraEntry();
-        }
+//        }
         return sMovieList;
     }
 
-    private static void addLatestNews() {
+    private static void addNews(final String category, final String filename) {
         final FlotsamParser flotsamParser = new FlotsamParser(sContext.getAssets());
-        final LatestNews latestNews = flotsamParser.getLatestNews("Nöje", "noje.json");
+        final LatestNews latestNews = flotsamParser.getLatestNews(category, filename);
         sMovieList.put(latestNews.section, VideoToMovieConverter.convert(latestNews.videos));
 
     }
