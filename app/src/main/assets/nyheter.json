@@ -17,7 +17,7 @@
           "title": "Nyheter",
           "linkUrl": "/tv/nyheter/"
         },
-        "title": "Utrikes",
+        "title": "Nyheter",
         "linkUrl": "/tv/nyheter/utrikes/"
       },
       "headline": "Gigantiskt träd rasar över barnen",
@@ -109,7 +109,7 @@
           "title": "Nyheter",
           "linkUrl": "/tv/nyheter/"
         },
-        "title": "Utrikes",
+        "title": "Nyheter",
         "linkUrl": "/tv/nyheter/utrikes/"
       },
       "headline": "Bilen voltar – ignoreras totalt av mannen intill",
@@ -207,7 +207,7 @@
           "title": "Nyheter",
           "linkUrl": "/tv/nyheter/"
         },
-        "title": "Utrikes",
+        "title": "Nyheter",
         "linkUrl": "/tv/nyheter/utrikes/"
       },
       "headline": "Sätt ALDRIG en bebis under en stege",
@@ -299,7 +299,7 @@
           "title": "Nyheter",
           "linkUrl": "/tv/nyheter/"
         },
-        "title": "Utrikes",
+        "title": "Nyheter",
         "linkUrl": "/tv/nyheter/utrikes/"
       },
       "headline": "Militärflygplan har kraschat i Spanien ",
@@ -391,7 +391,7 @@
           "title": "Nyheter",
           "linkUrl": "/tv/nyheter/"
         },
-        "title": "Utrikes",
+        "title": "Nyheter",
         "linkUrl": "/tv/nyheter/utrikes/"
       },
       "headline": "Gravida blinda kvinnan får \"se\" sin son",
@@ -483,7 +483,7 @@
           "title": "Nyheter",
           "linkUrl": "/tv/nyheter/"
         },
-        "title": "Utrikes",
+        "title": "Nyheter",
         "linkUrl": "/tv/nyheter/utrikes/"
       },
       "headline": "Putin inviger \"Segerdagsparaden\"",
@@ -560,97 +560,6 @@
       "self": "https://content.expressen.se/webtv-article/ad4a83c0-87ab-456e-a0a9-06f0979117dc",
       "linkUrl": "/tv/nyheter/utrikes/putin-inviger-segerdagsparaden/"
     },
-    {
-      "section": {
-        "self": "https://content.expressen.se/webtv-section/1a5d6d97-b5ed-3a62-ecc5-91fce010a02a",
-        "type": "webtv-section",
-        "section": {
-          "self": "https://content.expressen.se/webtv-section/adcbe7a3-2b0c-a068-137f-9b00e6b3ab44",
-          "type": "webtv-section",
-          "section": {
-            "self": "https://content.expressen.se/webtv-startpage/b9d3ee4b-a8c4-0686-7de0-e3a094246f78",
-            "type": "webtv-startpage",
-            "linkUrl": "/tv/"
-          },
-          "title": "Nyheter",
-          "linkUrl": "/tv/nyheter/"
-        },
-        "title": "Utrikes",
-        "linkUrl": "/tv/nyheter/utrikes/"
-      },
-      "headline": "Flicka attackeras av okänd man - i sitt eget hem",
-      "image": {
-        "pufferPath": "/00/bb/00bb25543cb4426ea3fbba8b617e9c04",
-        "versions": [
-          {
-            "aspectRatio": "1x1",
-            "width": 1300,
-            "height": 1300,
-            "url": "http://z.cdn-expressen.se/images/00/bb/00bb25543cb4426ea3fbba8b617e9c04/1x1/original.jpg"
-          },
-          {
-            "aspectRatio": "4x3",
-            "width": 1300,
-            "height": 972,
-            "url": "http://z.cdn-expressen.se/images/00/bb/00bb25543cb4426ea3fbba8b617e9c04/4x3/original.jpg"
-          },
-          {
-            "aspectRatio": "16x6",
-            "width": 1300,
-            "height": 487,
-            "url": "http://z.cdn-expressen.se/images/00/bb/00bb25543cb4426ea3fbba8b617e9c04/16x6/original.jpg"
-          },
-          {
-            "aspectRatio": "16x9",
-            "width": 1300,
-            "height": 733,
-            "url": "http://z.cdn-expressen.se/images/00/bb/00bb25543cb4426ea3fbba8b617e9c04/16x9/original.jpg"
-          }
-        ],
-        "originalExtension": ".jpg",
-        "type": "image",
-        "self": "https://content.expressen.se/image/00bb2554-3cb4-426e-a3fb-ba8b617e9c04"
-      },
-      "listingImage": {
-        "self": "https://content.expressen.se/image/00bb2554-3cb4-426e-a3fb-ba8b617e9c04"
-      },
-      "adsDisabled": false,
-      "hiddenFromLists": false,
-      "isPremium": false,
-      "isLive": false,
-      "name": "Flicka attackeras av okänd man - i sitt eget hem",
-      "streams": {
-        "high": "rtmp://d4c1729e8553d847ec026c817181f574.flash0.03837-od0.dna.qbrick.com/03837-od0/mp4:ncode/2015-05-08/expr7f35e5cc1d604f299233d627a15aac1a_1400",
-        "iPad": "http://6ad552102c9ac6cd65568fc4c6a4f652.httpcache0.03837-httpcache0.dna.qbrick.com/03837-httpcache0/_definst_/smil:ncode/2015-05-08/expr7f35e5cc1d604f299233d627a15aac1a_ipad/playlist.m3u8",
-        "iPhone": "http://f622404358198f0f85700f5f4e8eb020.httpcache0.03837-httpcache0.dna.qbrick.com/03837-httpcache0/_definst_/smil:ncode/2015-05-08/expr7f35e5cc1d604f299233d627a15aac1a_iphone/playlist.m3u8",
-        "android": "http://down0.03837-down0.dna.qbrick.com/03837-down0/ncode/2015-05-08/expr7f35e5cc1d604f299233d627a15aac1a_400.mp4",
-        "flashHds": "http://bb7128441c134ab0354c9218c88dfbbd.httpcache0.03837-httpcache0.dna.qbrick.com/03837-httpcache0/_definst_/smil:ncode/2015-05-08/expr7f35e5cc1d604f299233d627a15aac1a_hds/manifest.f4m",
-        "hashHls": "http://2ebc834ed525956af6cc7a03b3427071.httpcache0.03837-httpcache0.dna.qbrick.com/03837-httpcache0/_definst_/smil:ncode/2015-05-08/expr7f35e5cc1d604f299233d627a15aac1a_android/playlist.m3u8"
-      },
-      "subHeadline": "Slår tillbaka mot förövaren",
-      "totalSecondsDuration": 112,
-      "omnitureId": "7f35e5cc-1d60-4f29-9233-d627a15aac1a",
-      "omnitureVideoId": "6231815",
-      "publishDate": "2015-05-08T10:20:55.6915397Z",
-      "previewOnSections": true,
-      "playerParams": {
-        "vpConfig": {
-          "vphost": "http://se-expressen.videoplaza.tv"
-        },
-        "statisticsEngine": "Omniture",
-        "adsHtml5Preroll": "http://se-expressen.videoplaza.tv/proxy/distributor/v2?rt=vast_2.0&s=tv/tv/nyheter/utrikes&t=&tt=p&vbw=500&pf=html5",
-        "adsHtml5CountdownText": "Klippet startar om [time] sekunder",
-        "adsHtml5CountdownPosition": "bottom",
-        "adsHtml5PrerollDesktopTag": "desktop",
-        "adsHtml5PrerollMobileTag": "mobile",
-        "adsHtml5PrerollTabletTag": "tablet"
-      },
-      "relatedWebTvArticles": {
-        "self": "https://content.expressen.se/related-webtv-articles/webtv-article/7f35e5cc-1d60-4f29-9233-d627a15aac1a"
-      },
-      "type": "webtv-article",
-      "self": "https://content.expressen.se/webtv-article/7f35e5cc-1d60-4f29-9233-d627a15aac1a",
-      "linkUrl": "/tv/nyheter/utrikes/flicka-attackeras-av-okand-man---i-sitt-eget-hem/"
-    }
+
   ]
 }
