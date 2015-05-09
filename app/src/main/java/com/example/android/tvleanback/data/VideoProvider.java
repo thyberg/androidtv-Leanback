@@ -20,6 +20,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.example.android.tvleanback.R;
+import com.example.android.tvleanback.model.LatestNews;
 import com.example.android.tvleanback.model.Movie;
 import com.example.android.tvleanback.util.VideoToMovieConverter;
 
@@ -113,13 +114,21 @@ public class VideoProvider {
                     sMovieList.put(category_name, categoryList);
                 }
             }
-            addExtraEntry();
+            addLatestNews();
+//            addExtraEntry();
         }
         return sMovieList;
     }
 
+    private static void addLatestNews() {
+        final FlotsamParser flotsamParser = new FlotsamParser(sContext.getAssets());
+        final LatestNews latestNews = flotsamParser.getLatestNews("Nöje", "noje.json");
+        sMovieList.put(latestNews.section, VideoToMovieConverter.convert(latestNews.videos));
+
+    }
+
     private static void addExtraEntry() {
-        final List<Movie> list = Arrays.asList(VideoToMovieConverter.convert(null));
+        final List<Movie> list = Arrays.asList(VideoToMovieConverter.createDummyMovie(null));
         sMovieList.put("Nöje", list);
     }
 

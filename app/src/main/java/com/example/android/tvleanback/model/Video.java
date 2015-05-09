@@ -1,7 +1,6 @@
 package com.example.android.tvleanback.model;
 
 import android.graphics.Bitmap;
-import android.media.Image;
 
 import com.google.gson.annotations.SerializedName;
 

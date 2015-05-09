@@ -5,20 +5,24 @@ import android.provider.MediaStore;
 import com.example.android.tvleanback.model.Movie;
 import com.example.android.tvleanback.model.Video;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class VideoToMovieConverter {
-//    public static Movie convert(final Video video) {
-//        return new Movie(
-//            video.contentId,
-//            video.headline,
-//            video.subHeadline,
-//            "",
-//            "",
-//            "",
-//            "Expressen",
-//            video.section.title
-//        );
-//    }
     public static Movie convert(final Video video) {
+        return new Movie(
+            video.contentId,
+            video.headline,
+            video.subHeadline,
+            video.image.versions.get(3).imageUrl,
+            video.image.versions.get(3).imageUrl,
+            video.streams.iPad,
+            "Expressen",
+            video.section.title
+        );
+    }
+
+    public static Movie createDummyMovie(final Video video) {
         return new Movie(
             "6233199",
             "Avicii \u2013 Feeling Good",
@@ -30,5 +34,15 @@ public class VideoToMovieConverter {
             "Expressen",
             "Nöje"
         );
+    }
+
+    public static List<Movie> convert(final List<Video> videos) {
+        final List<Movie> list = new ArrayList<>();
+
+        for (final Video video : videos) {
+            list.add(convert(video));
+        }
+
+        return list;
     }
 }
