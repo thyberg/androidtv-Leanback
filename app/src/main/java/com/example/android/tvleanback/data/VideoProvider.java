@@ -115,7 +115,7 @@ public class VideoProvider {
 //                }
 //            }
         addNews("Nöje", "noje.json");
-        addNews("Utrikes", "nyheter.json");
+        addNews("Nyheter", "nyheter.json");
 //            addExtraEntry();
 //        }
         return sMovieList;
@@ -128,10 +128,10 @@ public class VideoProvider {
 
     }
 
-    private static void addExtraEntry() {
-        final List<Movie> list = Arrays.asList(VideoToMovieConverter.createDummyMovie(null));
-        sMovieList.put("Nöje", list);
-    }
+//    private static void addExtraEntry() {
+//        final List<Movie> list = Arrays.asList(VideoToMovieConverter.createDummyMovie(null));
+//        sMovieList.put("Nöje", list);
+//    }
 
     private static Movie buildMovieInfo(
         String category,

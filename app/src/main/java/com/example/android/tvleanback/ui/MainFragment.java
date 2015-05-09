@@ -108,7 +108,7 @@ public class MainFragment extends BrowseFragment implements
     }
 
     private void setupUIElements() {
-        setBadgeDrawable(getResources().getDrawable(R.drawable.videos_by_google_banner, null));
+        setBadgeDrawable(getResources().getDrawable(R.drawable.branding_icon, null));
         setTitle(getString(R.string.browse_title)); // Badge, when set, takes precedent over title
         setHeadersState(HEADERS_ENABLED);
         setHeadersTransitionOnBackEnabled(true);

@@ -4,8 +4,8 @@
     <color name="background_gradient_end">#DDDDDD</color>
     <color name="fastlane_background">#1f2326</color>
     <color name="search_opaque">#0976b5</color>
-    <color name="selected_background">#ffaa3f</color>
-    <color name="soft_opaque">#30000000</color>
+    <color name="selected_background">#0976b5</color>
+    <color name="soft_opaque">#801b1f21</color>
     <color name="img_soft_opaque">#30FF0000</color>
     <color name="img_full_opaque">#00000000</color>
     <color name="black_opaque">#AA000000</color>
@@ -14,5 +14,5 @@
     <color name="orange_transparent">#AAFADCA7</color>
     <color name="orange">#FADCA7</color>
     <color name="yellow">#EEFF41</color>
-    <color name="default_background">#0096a6</color>
+    <color name="default_background">#1f2326</color>
 </resources>
