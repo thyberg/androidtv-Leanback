@@ -16,7 +16,7 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.tvleanback"
+          package="se.expressen.tvleanback"
     android:versionCode="1"
     android:versionName="1.1" >
 
@@ -89,12 +89,12 @@
 
         <!-- Provides search suggestions for keywords against video meta data. -->
         <provider android:name=".data.VideoContentProvider"
-            android:authorities="com.example.android.tvleanback"
+            android:authorities="se.expressen.tvleanback"
             android:exported="true" />
 
         <provider
             android:name=".recommendation.RecommendationBuilder$RecommendationBackgroundContentProvider"
-            android:authorities="com.example.android.tvleanback.recommendation"
+            android:authorities="se.expressen.tvleanback.recommendation"
             android:exported="true" />
 
         <receiver
