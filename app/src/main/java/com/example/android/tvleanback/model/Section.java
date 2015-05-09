@@ -2,9 +2,6 @@ package com.example.android.tvleanback.model;
 
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by asmsabex on 23/03/15.
- */
 public class Section {
 
     //linkUrl: String
