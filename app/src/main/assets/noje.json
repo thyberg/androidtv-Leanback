@@ -87,9 +87,94 @@
       "type":"webtv-article",
       "self":"https://content.expressen.se/webtv-article/3c6e4a6a-b62e-4fc5-9039-c5b032446bd7",
       "linkUrl":"/tv/noje/avicii--feeling-good/"
+    },
+    {
+      "section":{
+        "self":"https://content.expressen.se/webtv-section/d463f319-2693-4b7b-cdc0-92122b5c8cf9",
+        "type":"webtv-section",
+        "section":{
+          "self":"https://content.expressen.se/webtv-startpage/b9d3ee4b-a8c4-0686-7de0-e3a094246f78",
+          "type":"webtv-startpage",
+          "linkUrl":"/tv/"
+        },
+        "title":"Nöje",
+        "linkUrl":"/tv/noje/"
+      },
+      "headline":"Smygtitta på klipp från nya Jurassic Park-filmen",
+      "image":{
+        "pufferPath":"/c7/93/c793a8f9d90d4a248af935e2f12d3cc5",
+        "versions":[
+          {
+            "aspectRatio":"1x1",
+            "width":1300,
+            "height":1300,
+            "url":"http://z.cdn-expressen.se/images/c7/93/c793a8f9d90d4a248af935e2f12d3cc5/1x1/original.jpg"
+          },
+          {
+            "aspectRatio":"4x3",
+            "width":1300,
+            "height":978,
+            "url":"http://z.cdn-expressen.se/images/c7/93/c793a8f9d90d4a248af935e2f12d3cc5/4x3/original.jpg"
+          },
+          {
+            "aspectRatio":"16x6",
+            "width":1300,
+            "height":487,
+            "url":"http://z.cdn-expressen.se/images/c7/93/c793a8f9d90d4a248af935e2f12d3cc5/16x6/original.jpg"
+          },
+          {
+            "aspectRatio":"16x9",
+            "width":1300,
+            "height":735,
+            "url":"http://z.cdn-expressen.se/images/c7/93/c793a8f9d90d4a248af935e2f12d3cc5/16x9/original.jpg"
+          }
+        ],
+        "originalExtension":".jpg",
+        "type":"image",
+        "self":"https://content.expressen.se/image/c793a8f9-d90d-4a24-8af9-35e2f12d3cc5"
+      },
+      "adsDisabled":false,
+      "hiddenFromLists":false,
+      "isPremium":false,
+      "isLive":false,
+      "name":"Smygtitta på klipp från nya Jurassic Park-filmen",
+      "streams":{
+        "high":"rtmp://974277ddee2194d7bcf02cf419fe4c6a.flash0.03837-od0.dna.qbrick.com/03837-od0/mp4:ncode/2015-04-30/exprc86012359ff64d61a119528330ad9583_1400",
+        "iPad":"http://cf2e1cc8215cf3fd817cc0772c1345da.httpcache0.03837-httpcache0.dna.qbrick.com/03837-httpcache0/_definst_/smil:ncode/2015-04-30/exprc86012359ff64d61a119528330ad9583_ipad/playlist.m3u8",
+        "iPhone":"http://d003c0ff2f3ffe98ae807a78eddf9101.httpcache0.03837-httpcache0.dna.qbrick.com/03837-httpcache0/_definst_/smil:ncode/2015-04-30/exprc86012359ff64d61a119528330ad9583_iphone/playlist.m3u8",
+        "android":"http://down0.03837-down0.dna.qbrick.com/03837-down0/ncode/2015-04-30/exprc86012359ff64d61a119528330ad9583_400.mp4",
+        "flashHds":"http://a823d62faf6cf2603cb458fafde1f5e1.httpcache0.03837-httpcache0.dna.qbrick.com/03837-httpcache0/_definst_/smil:ncode/2015-04-30/exprc86012359ff64d61a119528330ad9583_hds/manifest.f4m",
+        "hashHls":"http://61fb301d0536294b85e94cea63660236.httpcache0.03837-httpcache0.dna.qbrick.com/03837-httpcache0/_definst_/smil:ncode/2015-04-30/exprc86012359ff64d61a119528330ad9583_android/playlist.m3u8"
+      },
+      "subHeadline":"Så kommer \"Jurassic World\" se ut – premiär i sommar",
+      "omnitureId":"c8601235-9ff6-4d61-a119-528330ad9583",
+      "omnitureVideoId":"6214051",
+      "publishDate":"2015-05-09T07:57:52.8621495Z",
+      "previewOnSections":true,
+      "playerParams":{
+        "vpConfig":{
+          "vphost":"http://se-expressen.videoplaza.tv"
+        },
+        "statisticsEngine":"Omniture",
+        "adsHtml5Preroll":"http://se-expressen.videoplaza.tv/proxy/distributor/v2?rt=vast_2.0&s=tv/tv/noje&t=&tt=p&vbw=500&pf=html5",
+        "adsHtml5CountdownText":"Klippet startar om [time] sekunder",
+        "adsHtml5CountdownPosition":"bottom",
+        "adsHtml5PrerollDesktopTag":"desktop",
+        "adsHtml5PrerollMobileTag":"mobile",
+        "adsHtml5PrerollTabletTag":"tablet"
+      },
+      "relatedWebTvArticles":{
+        "self":"https://content.expressen.se/related-webtv-articles/webtv-article/c8601235-9ff6-4d61-a119-528330ad9583"
+      },
+      "listingImage":{
+        "self":"https://content.expressen.se/image/c793a8f9-d90d-4a24-8af9-35e2f12d3cc5"
+      },
+      "type":"webtv-article",
+      "self":"https://content.expressen.se/webtv-article/c8601235-9ff6-4d61-a119-528330ad9583",
+      "linkUrl":"/tv/noje/smygtitta-pa-klipp-fran-nya-jurassic-park-filmen/"
     }
   ],
-  "count":20,
+  "count":2,
   "next":{
     "self":"https://content.expressen.se/latest-news/webtv-section/d463f319-2693-4b7b-cdc0-92122b5c8cf9?page=2"
   }
